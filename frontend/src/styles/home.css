@@ -1,0 +1,40 @@
+
+/* Variables */
+:root {
+    --text-color: #E8DEF0;
+    --background-color: #110719;
+    --primary-color: #BC86E8;
+    --secondary-color: #5E0F9F;
+    --accent-color: #9518FC;
+}
+
+* {
+    box-sizing: border-box;
+
+    /* For the font type */
+    font-family: "Oxanium", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+header {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    color: var(--text-color);
+}
+
+header p {
+    font-size: 2rem;
+}
+
+header span, header p {
+    margin: 0 .5rem
+}
