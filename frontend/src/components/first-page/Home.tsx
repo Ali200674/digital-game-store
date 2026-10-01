@@ -1,10 +1,16 @@
-import "../../styles/home.css"
-
 import Header from "./Header.tsx";
+import Features from "./FeaturedGame.tsx";
+
+import "../../styles/home.css"
 
 function Home() {
     return (
-    <Header/>
+        <>
+            <Header/>
+            <main>
+                <Features/>
+            </main>
+        </>
     )
 }
 

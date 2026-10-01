@@ -16,6 +16,8 @@
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
+
+    color: var(--text-color);
 }
 
 body {
@@ -28,7 +30,7 @@ header {
     align-items: center;
     justify-content: center;
 
-    color: var(--text-color);
+    gap: 1.6rem;
 }
 
 header p {
@@ -38,3 +40,79 @@ header p {
 header span, header p {
     margin: 0 .5rem
 }
+
+main {
+    max-width: 60%;
+
+    margin: auto;
+}
+
+.featured-game {
+
+    display: grid;
+
+    grid-template-columns: 1fr minmax(10%, 30%);
+
+
+    img {
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+    }
+}
+
+button {
+    outline: none;
+    border: none;
+    background: var(--accent-color) none;
+
+    padding: 1rem;
+
+    border-radius: 0.8rem;
+
+    cursor: pointer;
+
+    transition: background-color 0.4s ease;
+}
+
+button:hover {
+    background: rgb(149 24 252 / 0.42);
+}
+
+.featured-game-description-body {
+    background-color: #180823;
+
+    position: relative;
+
+    padding: 1rem;
+
+    h2 {
+        margin: 0;
+    }
+}
+
+.featured-game-description-three span {
+    position: absolute;
+
+    padding: 1rem;
+
+    bottom: 0;
+    left: 0;
+}
+
+.view-game-details {
+    text-decoration: underline;
+
+    color: var(--accent-color);
+
+    position: absolute;
+
+    margin: 1rem;
+
+    bottom: 0;
+    right: 0;
+}
+
+
+
