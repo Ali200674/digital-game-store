@@ -1,14 +1,16 @@
 import Header from "./Header.tsx";
-import Features from "./FeaturedGame.tsx";
+import FeaturedGame from "./FeaturedGame.tsx";
 
 import "../../styles/home.css"
+import PopularGames from "./PopularGames.tsx";
 
 function Home() {
     return (
         <>
             <Header/>
             <main>
-                <Features/>
+                <FeaturedGame/>
+                <PopularGames/>
             </main>
         </>
     )

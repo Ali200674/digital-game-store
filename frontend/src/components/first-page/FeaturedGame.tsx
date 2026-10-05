@@ -1,4 +1,4 @@
-import cover from "../../../public/eldern-ring-cover.jpg";
+import cover from "../../../public/elden-ring-cover.jpg";
 
 function Features() {
     return (

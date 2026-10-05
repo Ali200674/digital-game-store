@@ -1,18 +1,15 @@
 
 /* Variables */
 :root {
-    --text-color: #E8DEF0;
-    --background-color: #110719;
-    --primary-color: #BC86E8;
-    --secondary-color: #5E0F9F;
-    --accent-color: #9518FC;
+    --text-color: #eae6ed;
+    --background-color: #0c0c0c;
 }
 
 * {
     box-sizing: border-box;
 
     /* For the font type */
-    font-family: "Oxanium", sans-serif;
+    font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
@@ -28,7 +25,7 @@ header {
     display: flex;
 
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 
     gap: 1.6rem;
 }
@@ -62,30 +59,16 @@ main {
     }
 }
 
-button {
-    outline: none;
-    border: none;
-    background: var(--accent-color) none;
-
-    padding: 1rem;
-
-    border-radius: 0.8rem;
-
-    cursor: pointer;
-
-    transition: background-color 0.4s ease;
-}
-
-button:hover {
-    background: rgb(149 24 252 / 0.42);
-}
 
 .featured-game-description-body {
-    background-color: #180823;
+    background-color: #323030;
 
     position: relative;
 
     padding: 1rem;
+
+    border-top-right-radius: .5rem;
+    border-bottom-right-radius: .5rem;
 
     h2 {
         margin: 0;
@@ -104,14 +87,63 @@ button:hover {
 .view-game-details {
     text-decoration: underline;
 
-    color: var(--accent-color);
-
     position: absolute;
 
     margin: 1rem;
 
     bottom: 0;
     right: 0;
+}
+
+.popular-games-body {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 1rem;
+
+    img {
+        width: 100%;
+    }
+}
+
+.popular-game-card {
+
+    display: flex;
+
+    flex-direction: column;
+    align-items: flex-end;
+
+    div {
+        display: inline-flex;
+
+        background-color: #3a3939;
+
+        width: fit-content;
+
+        span {
+            width: fit-content;
+
+            padding: 0 .5rem;
+        }
+    }
+
+}
+
+.popular-games-section {
+    margin-top: 3rem;
+}
+
+.popular-games-section-header {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    span {
+        text-decoration: underline;
+    }
 }
 
 
