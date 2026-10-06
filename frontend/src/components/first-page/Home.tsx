@@ -3,6 +3,7 @@ import FeaturedGame from "./FeaturedGame.tsx";
 
 import "../../styles/home.css"
 import PopularGames from "./PopularGames.tsx";
+import BrowseByGenre from "./BrowseByGenre.tsx";
 
 function Home() {
     return (
@@ -11,6 +12,7 @@ function Home() {
             <main>
                 <FeaturedGame/>
                 <PopularGames/>
+                <BrowseByGenre/>
             </main>
         </>
     )
