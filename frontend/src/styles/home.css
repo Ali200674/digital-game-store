@@ -36,8 +36,11 @@ header {
 
     margin: 0;
 
-    padding: 0.4rem;
+    padding: 0.8rem;
 
+    span {
+        text-decoration: underline;
+    }
 }
 
 header p {
@@ -207,6 +210,43 @@ main {
     }
 
 }
+
+footer {
+
+    display: flex;
+
+    flex-direction: row;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 0.8rem;
+
+    background-color: #1e1e1e;
+
+    margin-top: 3rem;
+
+    span {
+        text-decoration: underline;
+    }
+
+    div {
+        display: flex;
+
+        justify-content: center;
+
+        align-items: center;
+
+        gap: 1rem;
+    }
+
+    p {
+
+        font-size: 2rem;
+    }
+}
+
 
 
 
